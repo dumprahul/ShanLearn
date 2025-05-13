@@ -6,12 +6,14 @@ import {
 
 const deploySalt = "0x";
 
-const smartAccount = await toMetaMaskSmartAccount({
-  client: publicClient,
-  implementation: Implementation.Hybrid,
-  deployParams: [owner.address, [], [], []],
-  deploySalt,
-  signatory: { account: owner },
-});
+export default async function createDelegatorAccount() {
+  const smartAccount = await toMetaMaskSmartAccount({
+    client: publicClient,
+    implementation: Implementation.Hybrid,
+    deployParams: [owner.address, [], [], []],
+    deploySalt,
+    signatory: { account: owner },
+  });
 
-export default smartAccount;
+  return smartAccount;
+}
