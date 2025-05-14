@@ -7,6 +7,14 @@ Once inside, learners explore a rich archive of scientific contents genetrated b
 ShanLearn makes science education borderless, unstoppable, and built for a truly global, equitable future.
 
 
+<img width="937" alt="Screenshot 2025-05-14 at 4 12 16 PM" src="https://github.com/user-attachments/assets/cde7634a-7f7d-4750-9411-a1b80173538c" />
+
+<img width="1440" alt="Screenshot 2025-05-14 at 5 08 01 PM" src="https://github.com/user-attachments/assets/e8f2b466-a5e6-4cfa-a5e8-2ced3c233c95" />
+<img width="1440" alt="Screenshot 2025-05-14 at 5 08 16 PM" src="https://github.com/user-attachments/assets/02deac0b-29a0-4e21-a5eb-a6c16a8bf8e4" />
+<img width="1440" alt="Screenshot 2025-05-14 at 5 08 44 PM" src="https://github.com/user-attachments/assets/189c0651-f502-404b-a415-50c6f2e41b02" />
+
+
+
 ## Overview
 
 **Shanlearn** is a decentralized science education platform built with Next.js, Metamask Delegation Toolkit (DTK), and Gaia AI Agents. It enables users to:
