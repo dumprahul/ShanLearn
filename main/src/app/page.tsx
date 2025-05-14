@@ -19,7 +19,7 @@ export default function Home() {
           shimmerWidth={120}
           className="text-base sm:text-lg font-semibold text-center mb-2 text-neutral-500 dark:text-neutral-400"
         >
-          Unstoppable Science Library
+          Built with Metamask DTK and GAIA agents.
         </AnimatedShinyText>
         <AnimatedShinyText
           shimmerWidth={180}
@@ -38,7 +38,7 @@ export default function Home() {
             href="#explore"
             className="rounded-full bg-black px-8 py-3 text-lg font-semibold text-white shadow-lg hover:scale-105 transition-transform duration-200 border border-black dark:bg-white dark:text-black dark:border-white"
           >
-            Explore the Library
+            Get Started
           </a>
         </div>
       </main>

@@ -2,7 +2,7 @@
 
 import useDelegatorSmartAccount from "@/hooks/useDelegatorSmartAccount";
 import { useStepContext } from "@/hooks/useStepContext";
-import { usePimlicoUtils } from "@/hooks/usePimilicoUtils";
+import { usePimlicoUtils } from "@/hooks/usePimlicoUtils";
 import { useState } from "react";
 import { zeroAddress } from "viem";
 

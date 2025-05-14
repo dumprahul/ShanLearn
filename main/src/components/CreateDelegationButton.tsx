@@ -1,6 +1,6 @@
 "use client";
 
-import useDelegateSmartAccount from "@/hooks/useDelegateAccount";  
+import useDelegateSmartAccount from "@/hooks/useDelegateSmartAccount";
 import useDelegatorSmartAccount from "@/hooks/useDelegatorSmartAccount";
 import { useStepContext } from "@/hooks/useStepContext";
 import useStorageClient from "@/hooks/useStorageClient";
