@@ -1,0 +1,18 @@
+Project Title - ShanLearn
+
+One Liner of project - "“Empowering global science education through wallet-based access, delegated authority, and AI mentorship—onchain and unstoppable"
+
+Idea Description - ShanLearn is a decentralized platform that transforms how students access scientific knowledge. It acts as a Web3-powered science library, where students use MetaMask’s Delegation Toolkit to gain access as delegatees of a trusted library authority (the delegator). Upon successful authentication, students can explore a rich digital library of scientific materials and interact with specialized AI agents that serve as subject-matter mentors—guiding their learning journeys through personalized Q&A, quizzes, and concept breakdowns.
+This model decentralizes access, enhances inclusivity, and makes education unstoppable—even in censorship-prone regions—while leveraging blockchain authentication, IPFS storage, and intelligent tutoring systems.
+
+Problem it solves -
+
+🌍 Inequitable Access: Traditional libraries and scientific resources are centralized, restricted, or unavailable in many parts of the world.
+
+🔐 Siloed Educational Platforms: Current ed-tech platforms require full accounts, credentials, and are often paywalled or censored.
+
+🧑‍🏫 Lack of Mentorship: Students lack immediate access to qualified tutors or mentors who can explain complex scientific concepts in real-time.
+
+🪪 Credential Centralization: Educational achievements and reading progress are trapped in centralized systems without portable proofs of knowledge.
+
+
