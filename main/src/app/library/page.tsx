@@ -1,4 +1,6 @@
+'use client';
 import { AnimatedShinyText } from "@/components/magicui/animated-shiny-text";
+import { useRouter } from "next/navigation";
 
 const subjects = [
   { name: "Physics", agent: true, members: 124, desc: "Explore the laws of nature and the universe.", difficulty: "Advanced" },
@@ -22,6 +24,7 @@ const difficultyColors: Record<string, string> = {
 };
 
 export default function Library() {
+  const router = useRouter();
   return (
     <div className="relative min-h-screen flex flex-col items-center justify-start bg-background py-16 px-4">
       <AnimatedShinyText shimmerWidth={160} className="text-3xl font-bold text-center mb-2">
@@ -54,10 +57,25 @@ export default function Library() {
             <div className="text-xs text-neutral-600 dark:text-neutral-300 mb-2">
               Used by <span className="font-bold">{subject.members}</span> members
             </div>
-            <div className="w-full flex justify-center mt-auto">
-              <button className="px-4 py-2 rounded-lg bg-black text-white dark:bg-white dark:text-black font-semibold shadow hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-colors text-sm">
-                Explore
-              </button>
+            <div className="w-full flex flex-col items-center mt-auto">
+              {idx === 0 ? (
+                <button
+                  className="px-4 py-2 rounded-lg bg-black text-white dark:bg-white dark:text-black font-semibold shadow hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-colors text-sm w-full"
+                  onClick={() => router.push('/aiagent')}
+                >
+                  Explore
+                </button>
+              ) : (
+                <>
+                  <button
+                    className="px-4 py-2 rounded-lg bg-red-200 text-red-700 dark:bg-red-900 dark:text-red-200 font-semibold shadow transition-colors text-sm w-full cursor-not-allowed opacity-60"
+                    disabled
+                  >
+                    Explore
+                  </button>
+                  <span className="mt-2 text-xs text-red-600 dark:text-red-400 font-medium">Not Available</span>
+                </>
+              )}
             </div>
           </div>
         ))}
