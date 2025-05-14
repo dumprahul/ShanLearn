@@ -52,66 +52,74 @@ export default function Steps() {
   }, [isClient, isConnected, smartAccount, delegateSmartAccount, changeStep, getDelegation]);
 
   if (!isClient) {
-    return null; // or a loading state
+    return null;
   }
 
   return (
-    <>
+    <div className="space-y-8">
       {step === 1 && (
-        <>
-          <p className="text-block">
-            The first step would be to connect your Metamask wallet.
-            <br />
-            <br />
-            You can customize the Wagmi config to connect to any chain you want,
-            and use the connector of your choice.
-          </p>
-          <ConnectButton />
-        </>
+        <div className="space-y-6">
+          <div className="bg-blue-50 rounded-lg p-6">
+            <h2 className="text-xl font-semibold text-blue-900 mb-4">Step 1: Connect Your Wallet</h2>
+            <p className="text-blue-700 mb-6">
+              Connect your MetaMask wallet to get started. You can customize the Wagmi config to connect to any chain you want,
+              and use the connector of your choice.
+            </p>
+            <ConnectButton />
+          </div>
+        </div>
       )}
       {step === 2 && (
-        <>
-          <p className="text-block">
-            The MetaMask smart contract account that grants authority. This will
-            on chain be deployed, just in time for redeeming the delegation.
-          </p>
-          <DeployDelegatorButton />
-        </>
+        <div className="space-y-6">
+          <div className="bg-purple-50 rounded-lg p-6">
+            <h2 className="text-xl font-semibold text-purple-900 mb-4">Step 2: Deploy Delegator Account</h2>
+            <p className="text-purple-700 mb-6">
+              The MetaMask smart contract account that grants authority. This will be deployed on-chain,
+              just in time for redeeming the delegation.
+            </p>
+            <DeployDelegatorButton />
+          </div>
+        </div>
       )}
       {step === 3 && (
-        <>
-          <p className="text-block">
-            The MetaMask smart contract account that receives the delegation.
-            Initially this will be counterfactual (not deployed on-chain), until
-            it is deployed by submitting a user operation
-          </p>
-          <CreateDelegateButton />
-        </>
+        <div className="space-y-6">
+          <div className="bg-green-50 rounded-lg p-6">
+            <h2 className="text-xl font-semibold text-green-900 mb-4">Step 3: Create Delegate Account</h2>
+            <p className="text-green-700 mb-6">
+              The MetaMask smart contract account that receives the delegation. Initially this will be counterfactual
+              (not deployed on-chain), until it is deployed by submitting a user operation.
+            </p>
+            <CreateDelegateButton />
+          </div>
+        </div>
       )}
       {step === 4 && (
-        <>
-          <p className="text-block">
-            The delegator creates and signs a delegation, granting specific
-            authority to the delegate account. In this case, the delegation can
-            be used to perform any transaction on delegator's behalf.
-            <br />
-            <br />
-            To restrict the delegate account to only perform specific actions,
-            the delegator can specify a caveats array in the delegation.
-          </p>
-          <CreateDelegationButton />
-        </>
+        <div className="space-y-6">
+          <div className="bg-yellow-50 rounded-lg p-6">
+            <h2 className="text-xl font-semibold text-yellow-900 mb-4">Step 4: Create Delegation</h2>
+            <p className="text-yellow-700 mb-6">
+              The delegator creates and signs a delegation, granting specific authority to the delegate account.
+              In this case, the delegation can be used to perform any transaction on delegator's behalf.
+              <br /><br />
+              To restrict the delegate account to only perform specific actions,
+              the delegator can specify a caveats array in the delegation.
+            </p>
+            <CreateDelegationButton />
+          </div>
+        </div>
       )}
       {step === 5 && (
-        <>
-          <p className="text-block">
-            The redeemer submits a user operation that executes the action
-            allowed by the delegation (in this case, transfer nothing to no one)
-            on behalf of the delegator
-          </p>
-          <RedeemDelegationButton />
-        </>
+        <div className="space-y-6">
+          <div className="bg-red-50 rounded-lg p-6">
+            <h2 className="text-xl font-semibold text-red-900 mb-4">Step 5: Redeem Delegation</h2>
+            <p className="text-red-700 mb-6">
+              The redeemer submits a user operation that executes the action allowed by the delegation
+              (in this case, transfer nothing to no one) on behalf of the delegator.
+            </p>
+            <RedeemDelegationButton />
+          </div>
+        </div>
       )}
-    </>
+    </div>
   );
 }
