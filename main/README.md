@@ -1,12 +1,16 @@
 # Shanlearn
 
-Empowering global science education through wallet-based access, delegated authority, and AI mentorship—onchain and unstoppable.
+ShanLearn is a decentralized science library that grants students access through wallet-based delegation—no sign-ups, no pop-ups. Using MetaMask’s Delegation Toolkit, trusted institutions act as delegators, issuing scoped access to students without compromising control.
 
----
+Once inside, learners explore a rich archive of scientific contents genetrated by GAIA's Decentralized AI agents running. These agents provide unbiased, censorship-resistant guidance—free from corporate agendas or algorithmic bias.
 
-![Next.js](https://img.shields.io/badge/Next.js-15.3.2-blue?logo=nextdotjs)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript)
-![OpenAI](https://img.shields.io/badge/OpenAI-API-green?logo=openai)
+ShanLearn makes science education borderless, unstoppable, and built for a truly global, equitable future.
+
+<img width="937" alt="Screenshot 2025-05-14 at 4 12 16 PM" src="https://github.com/user-attachments/assets/cde7634a-7f7d-4750-9411-a1b80173538c" />
+
+<img width="1440" alt="Screenshot 2025-05-14 at 5 08 01 PM" src="https://github.com/user-attachments/assets/e8f2b466-a5e6-4cfa-a5e8-2ced3c233c95" />
+<img width="1440" alt="Screenshot 2025-05-14 at 5 08 16 PM" src="https://github.com/user-attachments/assets/02deac0b-29a0-4e21-a5eb-a6c16a8bf8e4" />
+<img width="1440" alt="Screenshot 2025-05-14 at 5 08 44 PM" src="https://github.com/user-attachments/assets/189c0651-f502-404b-a415-50c6f2e41b02" />
 
 ## Overview
 
@@ -22,17 +26,6 @@ Empowering global science education through wallet-based access, delegated autho
 - **Library**: Browse a variety of science and technology subjects. Only Physics is currently available for AI-powered exploration; other subjects are marked as "Not Available".
 - **Gaia Agent Chat**: Interact with Mr. Cooper, a Physics AI agent, in a modern chat interface. Powered by OpenAI's Llama 70B model via Gaia domains.
 - **Modern UI**: Beautiful, responsive design with animated backgrounds, gradients, and smooth transitions. Built with Tailwind CSS and custom components.
-
-## Tech Stack
-
-- [Next.js 15](https://nextjs.org/) (App Router, SSR, API routes)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [MetaMask Delegation Toolkit (DTK)](https://github.com/MetaMask/delegation-toolkit)
-- [OpenAI API](https://platform.openai.com/) (Llama 70B via Gaia)
-- [Wagmi](https://wagmi.sh/) (wallet integration)
-- [Viem](https://viem.sh/) (EVM utilities)
-- [React 19](https://react.dev/)
 
 ## Getting Started
 
