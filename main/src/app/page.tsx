@@ -3,6 +3,7 @@ import { AnimatedShinyText } from "@/components/magicui/animated-shiny-text";
 import { TypingAnimation } from "@/components/magicui/typing-animation";
 import { Globe } from "@/components/magicui/globe";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -34,12 +35,12 @@ export default function Home() {
           Empowering global science education through wallet-based access, delegated authority, and AI mentorship—onchain and unstoppable
         </TypingAnimation>
         <div className="mt-8 flex gap-4">
-          <a
-            href="#explore"
+          <Link
+            href="/signin"
             className="rounded-full bg-black px-8 py-3 text-lg font-semibold text-white shadow-lg hover:scale-105 transition-transform duration-200 border border-black dark:bg-white dark:text-black dark:border-white"
           >
             Get Started
-          </a>
+          </Link>
         </div>
       </main>
       {/* Subtle overlay for effect */}
