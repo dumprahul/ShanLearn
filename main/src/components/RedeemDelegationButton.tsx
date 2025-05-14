@@ -8,6 +8,7 @@ import { getDeleGatorEnvironment } from "@metamask/delegation-toolkit";
 import { useState } from "react";
 import { Hex } from "viem";
 import { sepolia } from "viem/chains";
+import { ShimmerButton } from "@/components/magicui/shimmer-button";
 
 export default function RedeemDelegationButton() {
   const { smartAccount } = useDelegateSmartAccount();
@@ -57,8 +58,8 @@ export default function RedeemDelegationButton() {
   if (transactionHash) {
     return (
       <div>
-        <button
-          className="button"
+        <ShimmerButton
+          className="w-full mb-2"
           onClick={() =>
             window.open(
               `https://sepolia.etherscan.io/tx/${transactionHash}`,
@@ -67,18 +68,18 @@ export default function RedeemDelegationButton() {
           }
         >
           View on Etherscan
-        </button>
+        </ShimmerButton>
       </div>
     );
   }
 
   return (
-    <button
-      className="button"
+    <ShimmerButton
+      className="w-full mb-2"
       onClick={handleRedeemDelegation}
       disabled={loading}
     >
       {loading ? "Redeeming..." : "Redeem Delegation"}
-    </button>
+    </ShimmerButton>
   );
 }

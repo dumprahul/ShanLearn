@@ -55,7 +55,7 @@ export default function SignIn() {
           <div className="flex flex-col items-center gap-4 w-full">
             <p className="text-center text-base text-neutral-700 dark:text-neutral-300">
               The first step is to connect your MetaMask wallet.<br />
-              You can customize the Wagmi config to connect to any chain you want, and use the connector of your choice.
+              Delegator is the Library Authority that grants access to the library. And the delegatee is you.
             </p>
             <ConnectButton />
           </div>
@@ -71,6 +71,7 @@ export default function SignIn() {
         {step === 3 && (
           <div className="flex flex-col items-center gap-4 w-full">
             <p className="text-center text-base text-neutral-700 dark:text-neutral-300">
+              Now you can create a delegatee account. Click the button below to create your delegatee account.
               The MetaMask smart contract account that receives the delegation. Initially this will be counterfactual (not deployed on-chain), until it is deployed by submitting a user operation.
             </p>
             <CreateDelegateButton />
@@ -79,7 +80,7 @@ export default function SignIn() {
         {step === 4 && (
           <div className="flex flex-col items-center gap-4 w-full">
             <p className="text-center text-base text-neutral-700 dark:text-neutral-300">
-              The delegator creates and signs a delegation, granting specific authority to the delegate account. In this case, the delegation can be used to perform any transaction on delegator's behalf.<br /><br />To restrict the delegate account to only perform specific actions, the delegator can specify a caveats array in the delegation.
+              The delegator - Library Authority creates and signs a delegation, granting specific authority to you to access the library. In this case, the delegation can be used to perform any transaction on delegator's behalf.
             </p>
             <CreateDelegationButton />
           </div>
@@ -87,8 +88,8 @@ export default function SignIn() {
         {step === 5 && (
           <div className="flex flex-col items-center gap-4 w-full">
             <p className="text-center text-base text-neutral-700 dark:text-neutral-300">
-              The redeemer submits a user operation that executes the action allowed by the delegation (in this case, transfer nothing to no one) on behalf of the delegator.
-            </p>
+                Now Redeem the delegation by clicking the button below. As easy as that! 
+                </p>
             <RedeemDelegationButton />
           </div>
         )}

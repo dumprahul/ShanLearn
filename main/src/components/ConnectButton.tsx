@@ -1,6 +1,7 @@
 "use client";
 
 import { useConnect } from "wagmi";
+import { ShimmerButton } from "@/components/magicui/shimmer-button";
 
 export default function ConnectButton() {
   const { connect, connectors } = useConnect();
@@ -8,13 +9,13 @@ export default function ConnectButton() {
   return (
     <div className="button-container">
       {connectors.map((connector) => (
-        <button
-          className="button"
+        <ShimmerButton
           onClick={() => connect({ connector })}
           key={connector.id}
+          className="w-full mb-2"
         >
           Connect with {connector.name}
-        </button>
+        </ShimmerButton>
       ))}
     </div>
   );

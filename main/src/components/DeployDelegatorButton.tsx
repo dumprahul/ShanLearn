@@ -5,6 +5,7 @@ import { useStepContext } from "@/hooks/useStepContext";
 import { usePimlicoUtils } from "@/hooks/usePimlicoUtils";
 import { useState } from "react";
 import { zeroAddress } from "viem";
+import { ShimmerButton } from "@/components/magicui/shimmer-button";
 
 export default function DeployDelegatorButton() {
   const [loading, setLoading] = useState(false);
@@ -38,10 +39,8 @@ export default function DeployDelegatorButton() {
   };
 
   return (
-    <>
-      <button className="button" onClick={handleDeployDelegator}>
-        {loading ? "Deploying..." : "Deploy Delegator Account"}
-      </button>
-    </>
+    <ShimmerButton className="w-full mb-2" onClick={handleDeployDelegator} disabled={loading}>
+      {loading ? "Deploying..." : "Deploy Delegator Account"}
+    </ShimmerButton>
   );
 }

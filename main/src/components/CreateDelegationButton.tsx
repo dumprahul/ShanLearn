@@ -5,6 +5,7 @@ import useDelegatorSmartAccount from "@/hooks/useDelegatorSmartAccount";
 import { useStepContext } from "@/hooks/useStepContext";
 import useStorageClient from "@/hooks/useStorageClient";
 import { prepareRootDelegation } from "@/utils/delegationUtils";
+import { ShimmerButton } from "@/components/magicui/shimmer-button";
 
 export default function CreateDelegationButton() {
   const { smartAccount } = useDelegatorSmartAccount();
@@ -35,8 +36,8 @@ export default function CreateDelegationButton() {
   };
 
   return (
-    <button className="button" onClick={handleCreateDelegation}>
+    <ShimmerButton className="w-full mb-2" onClick={handleCreateDelegation}>
       Create Delegation
-    </button>
+    </ShimmerButton>
   );
 }
