@@ -11,7 +11,7 @@ const SYSTEM_PROMPT = { role: 'system' as const, content: 'You are a strategic r
 
 const userAvatar = (
   <div className="w-8 h-8 rounded-full bg-gradient-to-br from-black to-neutral-700 flex items-center justify-center text-white font-bold shadow-md">
-    <span>U</span>
+    <span>You</span>
   </div>
 );
 const assistantAvatar = (
@@ -58,7 +58,7 @@ const AiAgentChat: React.FC = () => {
       <main className="relative z-20 flex flex-col items-center justify-center gap-4 px-4 py-24 sm:py-32 w-full">
         <div className="w-full max-w-2xl bg-white/80 dark:bg-black/80 rounded-3xl shadow-2xl flex flex-col min-h-[600px] border border-neutral-200 dark:border-neutral-800 backdrop-blur-xl">
           <header className="px-8 pt-8 pb-4 rounded-t-3xl bg-gradient-to-r from-black to-neutral-800 text-white text-center font-bold text-2xl shadow-md">
-            <span className="drop-shadow">🤖 AI Agent Chat</span>
+            <span className="drop-shadow">Gaia Agent</span>
           </header>
           <div className="flex-1 overflow-y-auto px-6 py-8 flex flex-col gap-6 bg-transparent">
             {messages.map((msg, idx) => (
