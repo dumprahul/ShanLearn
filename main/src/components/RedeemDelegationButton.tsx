@@ -9,6 +9,7 @@ import { useState } from "react";
 import { Hex } from "viem";
 import { sepolia } from "viem/chains";
 import { ShimmerButton } from "@/components/magicui/shimmer-button";
+import { useRouter } from "next/navigation";
 
 export default function RedeemDelegationButton() {
   const { smartAccount } = useDelegateSmartAccount();
@@ -18,6 +19,7 @@ export default function RedeemDelegationButton() {
   const { getDelegation } = useStorageClient();
   const { bundlerClient, paymasterClient, pimlicoClient } =
     usePimlicoUtils();
+  const router = useRouter();
 
   const handleRedeemDelegation = async () => {
     if (!smartAccount) return;
@@ -68,6 +70,12 @@ export default function RedeemDelegationButton() {
           }
         >
           View on Etherscan
+        </ShimmerButton>
+        <ShimmerButton
+          className="w-full mt-3"
+          onClick={() => router.push('/library')}
+        >
+          Explore Gaia Agents
         </ShimmerButton>
       </div>
     );
